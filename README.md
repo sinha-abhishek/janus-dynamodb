@@ -1,5 +1,5 @@
 ## Docker image for setting up janus graph with Dynamo db for backend
-his is docker image for running graph database [JanusGraph](http://janusgraph.org/) using [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) as scalable storage backend. This uses the aswlabs project for [Amazon DynamoDB Storage Backend For JanusGraph](https://github.com/awslabs/dynamodb-janusgraph-storage-backend)
+This is docker image for running graph database [JanusGraph](http://janusgraph.org/) using [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) as scalable storage backend. This uses the aswlabs project for [Amazon DynamoDB Storage Backend For JanusGraph](https://github.com/awslabs/dynamodb-janusgraph-storage-backend)
 
 ## Creating docker image
 docker build -t <image_name> .
