@@ -11,8 +11,8 @@ docker run -it --network=bridge -p <gremlin_server_ws_port>:8182 -e AWS_ACCESS_K
 This will create a docker instance which will be hosting janusgraph webscoket port at gremlin_server_ws_port on the host machine. 
 
 # Environment flags explanation
-AWS_ACCESS_KEY_ID : AWS access key for the account with dynamo db write access (mandatory)
-AWS_SECRET_ACCESS_KEY : AWS secret key for account (mandtory)
-EC2_ZONE (optional) : ec2 availability zone for the Dynamo DB. Default value is us-east-1
-DYNAMO_PREFIX (optional) : prefix for dynamo db tables. Default value is 'jg'. Your tables will start with <prefix>_ and be followed by janusgraph specific table names. This is specifically useful if you want to have a development and testing environment using the same docker image. You can set prefix to 'testing' during development phase and set it to 'prod' for the image you want to use on production    
+* AWS_ACCESS_KEY_ID : AWS access key for the account with dynamo db write access (mandatory)
+* AWS_SECRET_ACCESS_KEY : AWS secret key for account (mandtory)
+* EC2_ZONE (optional) : ec2 availability zone for the Dynamo DB. Default value is us-east-1
+* DYNAMO_PREFIX (optional) : prefix for dynamo db tables. Default value is 'jg'. Your tables will start with <prefix>_ and be followed by janusgraph specific table names. This is specifically useful if you want to have a development and testing environment using the same docker image. You can set prefix to 'testing' during development phase and set it to 'prod' for the image you want to use on production    
 
